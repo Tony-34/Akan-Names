@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(82, 28, 28);
+}
+img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+	background-position: center;
+    position: relative;
+}
+/* .parent{
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: 670px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: orange;
+    box-shadow: 1px 0px 2px #ffffff;
+  } */
+ 
