@@ -8,14 +8,14 @@ img{
 	background-position: center;
     position: relative;
 }
-/* .parent{
-    margin-top: 10px;
-    margin-bottom: 0;
-    height: 670px;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: orange;
-    box-shadow: 1px 0px 2px #ffffff;
-  } */
+
+ .overlay{
+background-color: cadetblue;
+text-align: center;
+text-decoration: chocolate;
+font-style: italic;
  
+
+}
+
+

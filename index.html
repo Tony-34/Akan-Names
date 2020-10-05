@@ -2,12 +2,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
      <title>Akan Names</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
-     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
-    </head>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+ 
+     </head>
     <body>
             <div class="container-fluid">
             <div class="jumbotron parent">
@@ -26,38 +26,47 @@
             </div>
         <div class="col-md-6 right">
             <div class="panel col-sm-6 offset-sm-3">
+                <form>
                 <div class="form-group top-form">
                     <label for="cemtury" class="labels">century</label>
-                    <input type="number" class="form-control" placeholder="Enter the century" id="century" required min="0" max="30">
+                    <input type="number" class="form-control" placeholder="Enter the century" id="century" required min="12" max="20">
         </div>
         <div class="form-group">
             <label for="year" class="labels">Year</label>
-            <input type="number" placeholder="Enter the year"   class="form-control"  id="year"  required min="0" max="100"> 
+            <input type="number" placeholder="Enter the year"   class="form-control"  id="year"  required min="0" max="99"> 
         </div>
         <div class="form-group">
             <label for="monthDay" class="labels">Month</label>
-            <input type="number" placeholder="Enter the month of year" class="form-control" id="month" required min="0" max="12">
+            <input type="number" placeholder="Enter the month of year" class="form-control" id="month" required min="1" max="12">
 
         </div>
         <div class="form-group">
             <label for="monthDay" class="labels">Day of the month</label>
-            <input type="number" placeholder="Enter the day of the month" class="form-control" id="monthday" required min="0" max="12">
+            <input type="number" placeholder="Enter the day of the month" class="form-control" id="monthday" required min="1" max="31">
         </div>
-        <form class="radio-button">
-            <input type="radio" class="gender labels" value="male" id="rad1" name="rads" required>male
-            <input type="radio" class="gender labels" value="female" id="rad1" name="rads" required>Female
-        </form>
-        <br>
-        <a href="#result"><button type="button" name="button" class="btn btn-primary mn-2" onclick="checkDayOfweek();">Calculate Birthday</button></a>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Select gender</label>
+            <div class="col-sm-13">
+            <select class="form-control " id="gender">
+              <option value=""></option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+        </div>
+          </div>
+         
+         <br>
+        <a href="#result"><button type="button" name="button" class="btn btn-primary mn-2" onclick="checkDayOfMonth()">Submit</button></a>
         <h1 id="result"></h1>
-            </div>
-        </div>
-    </div>
-    </div>
+    </form>
+        
 
-    </div>
+           </div>
+          </div>
+          </div>
+
+       
+        </div>
     <script src="js/script.js"></script>
-        
-        
-    </body>
+</body>
 </html>
